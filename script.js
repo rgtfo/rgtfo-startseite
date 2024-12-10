@@ -1,22 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Google Analytics ohne Cookie-Zustimmung
-    function loadGoogleAnalytics() {
-        const script = document.createElement('script');
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-24W2ENS4EZ';
-        script.async = true;
-        document.head.appendChild(script);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-24W2ENS4EZ');
-    }
-
     
-    loadGoogleAnalytics();
-
     // Dark Mode Script
     const darkModeToggle = document.getElementById('dark-mode-toggle');
 
